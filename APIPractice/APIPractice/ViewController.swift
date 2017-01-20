@@ -12,18 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        // 呼び出すAPIのパラメータを生成
         let login = LoginAPI()
-        login.setParameter(id: "あいでぃ", pass: "ぱす")
-        login.postRequest()
+        // リクエストパラメータを詰める
+        login.setRequestParameter(id: "あいでぃ", pass: "ぱす")
+        // POST通信を行う
+        login.postRequest { (responseObject: LoginAPI) in
+            dump(responseObject)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
