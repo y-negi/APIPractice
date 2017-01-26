@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		093D5AF31E2FB73700866243 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D5AF21E2FB73700866243 /* APIProtocol.swift */; };
 		093D5AF51E2FBECB00866243 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D5AF41E2FBECB00866243 /* LoginAPI.swift */; };
+		09502C7B1E35D7230060F9DD /* MSAgreementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09502C7A1E35D7230060F9DD /* MSAgreementView.xib */; };
+		09502C7D1E35D7410060F9DD /* MSAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09502C7C1E35D7410060F9DD /* MSAgreementView.swift */; };
 		09F599E31E2F788D006566D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F599E21E2F788D006566D0 /* AppDelegate.swift */; };
 		09F599E51E2F788D006566D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F599E41E2F788D006566D0 /* ViewController.swift */; };
 		09F599E81E2F788D006566D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F599E61E2F788D006566D0 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		093D5AF21E2FB73700866243 /* APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		093D5AF41E2FBECB00866243 /* LoginAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		09502C7A1E35D7230060F9DD /* MSAgreementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSAgreementView.xib; sourceTree = "<group>"; };
+		09502C7C1E35D7410060F9DD /* MSAgreementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAgreementView.swift; sourceTree = "<group>"; };
 		09F599DF1E2F788D006566D0 /* APIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F599E21E2F788D006566D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F599E41E2F788D006566D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				093D5AF11E2FB60900866243 /* API */,
 				09F599E21E2F788D006566D0 /* AppDelegate.swift */,
 				09F599E41E2F788D006566D0 /* ViewController.swift */,
+				09502C7C1E35D7410060F9DD /* MSAgreementView.swift */,
+				09502C7A1E35D7230060F9DD /* MSAgreementView.xib */,
 				09F599E61E2F788D006566D0 /* Main.storyboard */,
 				09F599E91E2F788D006566D0 /* Assets.xcassets */,
 				09F599EB1E2F788D006566D0 /* LaunchScreen.storyboard */,
@@ -142,8 +148,7 @@
 				TargetAttributes = {
 					09F599DE1E2F788D006566D0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = SZVZXG6FU6;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -173,6 +178,7 @@
 				09F599ED1E2F788D006566D0 /* LaunchScreen.storyboard in Resources */,
 				09F599EA1E2F788D006566D0 /* Assets.xcassets in Resources */,
 				09F599E81E2F788D006566D0 /* Main.storyboard in Resources */,
+				09502C7B1E35D7230060F9DD /* MSAgreementView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +240,7 @@
 				093D5AF31E2FB73700866243 /* APIProtocol.swift in Sources */,
 				09F599E51E2F788D006566D0 /* ViewController.swift in Sources */,
 				093D5AF51E2FBECB00866243 /* LoginAPI.swift in Sources */,
+				09502C7D1E35D7410060F9DD /* MSAgreementView.swift in Sources */,
 				09F599E31E2F788D006566D0 /* AppDelegate.swift in Sources */,
 				09F599F51E2F7BD1006566D0 /* APIClient.swift in Sources */,
 			);
@@ -359,11 +366,15 @@
 			baseConfigurationReference = 1477457737BD670FE0C925D6 /* Pods-APIPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SZVZXG6FU6;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chiyoda Tomonori (5RU2MLC2NC)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = APIPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.negi.APIPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7cfc9a7a-bccc-4f1b-9930-65d5a3359169";
+				PROVISIONING_PROFILE_SPECIFIER = Team_DEV;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/APIPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -374,11 +385,15 @@
 			baseConfigurationReference = 12F85452FBB4FFFF8E2B90F7 /* Pods-APIPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SZVZXG6FU6;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chiyoda Tomonori (5RU2MLC2NC)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = APIPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.negi.APIPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7cfc9a7a-bccc-4f1b-9930-65d5a3359169";
+				PROVISIONING_PROFILE_SPECIFIER = Team_DEV;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/APIPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

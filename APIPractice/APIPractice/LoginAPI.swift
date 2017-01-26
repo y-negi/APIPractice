@@ -36,6 +36,6 @@ class LoginAPI: APIParameterProtocol {
     ///
     /// - Parameter responseObject: APIのレスポンスで返ってきたもの
     func setResponseParameter(responseObject: Dictionary<String, Any>) {
-        responseIsLogin = responseObject["isLogin"] as! Bool? ?? false
+        responseIsLogin = responseObject["isLogin"] as? Bool ?? false
     }
 }
